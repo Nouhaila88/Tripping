@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>iTrip</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("waterfall.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.myclass:hover {
+  
+   font-weight:bold;
+
+}
+.myclass1{
+  font-weight: bolder;
+  color:blue;
+  margin: 0px;
+
+}
+
+
+
+</style>
+<script>
+  function hoverlogo(){
+    document.getElementById("demo").innerHTML="<img src='logo.jpg'>";
+
+  };
+  function hoverend(){
+    document.getElementById("demo").innerHTML="<span class='myclass1'>iTrip</span>";
+  }
+  function signin(){
+    document.getElementById("popup").innerHTML="<div class='w3-container w3-card-4' style='display:inline'><form class='w3-container'><h2 class='w3-text-blue'>SIGN IN</h2><p><label class='w3-text-blue'><b>usernmae</b></label><input class='w3-input w3-border' name='fn' type='text'></p><p><label class='w3-text-blue'><b>password</b></label><input class='w3-input w3-border' name='psswd' type='password'></p> <input type='submit' value='get in' class='w3-button w3-teal w3-hover-aqua' style='margin-right:10px'><input type='reset' value='reset' class='w3-button w3-teal w3-hover-aqua'></form></div>"
+  }
+
+</script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card-4" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button w3-hover-light-grey myclass1" id="demo" onmouseover="hoverlogo()" onmouseout="hoverend()">iTrip</a>
+      
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/Users/admin/Desktop/my%20parascolar%20activities/first%20try/workzone/TEST1.html" class="w3-bar-item w3-button" target="_blank"><b>SIGN UP</b></a>
+      <a href="#" class="w3-bar-item w3-button " onclick="signin()"><b>SIGN IN</b></a>
+      
+      
+      <a href="#" class="w3-bar-item w3-button  "><b>CONTACT</b></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
+ 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+     <span class="w3-jumbo w3-hide-small myclass">Great things are done when man and mountains meet</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium myclass">Great things are done when man and mountains meet</span><br>
+    
+    <span   class="w3-large myclass">Amazing journey through imaginary wanders.</span>
+    
+    <p><a href="file:///C:/Users/admin/Desktop/my%20parascolar%20activities/first%20try/workzone/main_page_test.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><b>Get in to see yourself</b></a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <div class="w3-display-topright" id="popup" style="padding-top: 100px;background-image:url('paper.jpg');"><div>
+
+</header>
+
+ 
+
+</body>
+</html>
