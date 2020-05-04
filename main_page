@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<title>MAINPAGE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+
+</style>
+
+   
+<body class="w3-content w3-light-grey" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse  w3-light-blue w3-animate-left" style="z-index:4;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="pdf.jpg" style="width:60%;" class="w3-round"><br><br>
+    
+    
+  </div>
+  <div class="w3-bar-block">
+    <a href="#myprofil" onclick="affect()" class="w3-bar-item w3-button w3-padding w3-text-white"><span style="font-size: 30px" class="w3-margin-right" >&#128058</span><strong><span style="font-size: 20px">MY NEXT STATION</span></strong></a> 
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="pdf.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>3ICH</b></h1>
+    
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom" id="place1">
+      <img src="img7.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Oum Rabia</b></p>
+        <p>Oum Rabia are located about 45 kilometers from Khenifra, in the depths of the Atlas Mountains.</p>
+        <i class="fa fa-heart-o w3-margin-right" style="font-size:36px;" onclick="redheart(1)" id="heart1" ondblclick="simplheart(1)"></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom" id="place2">
+      <img src="img1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>AGHROUD</b></p>
+        <p>35 km north of Agadir, a half-hour drive away, Aghroud, with its crystal clear waters, is one of the most beautiful beaches in Morocco.</p>
+         <i class="fa fa-heart-o w3-margin-right" style="font-size:36px;" onclick="redheart(2)" ondblclick="simplheart(2)" id="heart2"></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container" id="place3">
+      <img src="img3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>PARADISE</b></p>
+        <p>Paradise on the imouzzer road from Agadir, 25 km from Aourir, after 1 hour of walking in the middle of the forest is paradise.</p>
+         <i class="fa fa-heart-o w3-margin-right" style="font-size:36px;" onclick="redheart(3)" ondblclick="simplheart(3)"  id="heart3"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom" id="place4">
+      <img src="img5.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>MIRLEFT</b></p>
+        <p>The commune of Mirleft is located in the south of Morocco 130 km from Agadir, between the cities of Tiznit and Sidi Ifni.</p>
+         <i class="fa fa-heart-o w3-margin-right" style="font-size:36px;" onclick="redheart(4)" ondblclick="simplheart(4)" id="heart4"></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom" id="place5">
+      <img src="img9.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>MERZOUGA</b></p>
+        <p>Merzouga located in the south-east of Morocco, 35 kilometers from Moulay Ali Cherif, 50 kilometers from Erfoud, 562 km from Marrakech. </p>
+         <i class="fa fa-heart-o w3-margin-right" style="font-size:36px;" onclick="redheart(5)" ondblclick="simplheart(5)" id="heart5"></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container" id="place6">
+      <img src="img6.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Aguelmam</b></p>
+        <p>Aguelmam Azegza is a natural lake located east of the city of Khénifra in Morocco. About 20 km as the crow flies.</p>
+         <i class="fa fa-heart-o w3-margin-right" style="font-size:36px;" onclick="redheart(6)" ondblclick="simplheart(6)" id="heart6"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" style="background: lightgrey url('logo.jpg')  no-repeat fixed right top;" >
+    <h1 style="color: teal"><b>MY NEXT STATION</b></h1>
+ <div class="w3-third w3-container w3-margin-bottom" id="myprofil"></div>
+  </div>
+</div>
+ 
+  
+
+
+ <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+function redheart(i){
+	
+			document.getElementById("heart"+i).style.color="red";
+		
+}
+function simplheart(i){
+	document.getElementById("heart"+i).style.color="black";
+}
+function affect(){
+   
+     for (var i = 1; i < 7; i++) {
+     	if (document.getElementById("heart"+i).style.color=="red") {
+
+     		if (document.getElementById("myprofil").innerHTML=="") {document.getElementById("myprofil").innerHTML=document.getElementById("place"+i).innerHTML;}
+     		else{
+     		document.getElementById("myprofil").innerHTML=document.getElementById("myprofil").innerHTML+document.getElementById("place"+i).innerHTML;}
+     		
+
+     	}
+     }
+}
+
+
+
+
+</script>
+
+ 
+
+ 
+</body>
+</html>
